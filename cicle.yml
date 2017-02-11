@@ -1,0 +1,13 @@
+machine:
+    node:
+        version: 4.2.1
+test:
+  override:
+    - npm test
+dependencies:
+  override:
+    - npm install
+  pre:
+    - sudo apt-get install build-essential
+    - sudo apt-get install gcc
+    - sudo apt-get install g++
